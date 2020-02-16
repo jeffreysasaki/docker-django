@@ -1,7 +1,7 @@
 Docker Django
 -
-1. Create the Django project by running: `docker-compose run web django-admin startproject <Project Name> .`
-2. Modify the `DATABASES = ...` variable in settings.py to...
+1. Create the Django project by running: `sudo docker-compose run web django-admin startproject <Project Name> .`
+2. Modify the `DATABASES = ...` variable in `<Project Name>/settings.py` to...
 ```
 DATABASES = {
     'default': {
@@ -14,3 +14,8 @@ DATABASES = {
 }
 ```
 3. Run with `docker-compose up`
+
+Reference
+-
+- https://docs.docker.com/compose/django/
+- https://docs.djangoproject.com/en/2.2/intro/tutorial01/
